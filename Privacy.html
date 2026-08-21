@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - AI Document Scanner</title>
+<style>
+  :root { --brand: #4F46E5; }
+  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; color: #1a1a2e; line-height: 1.6; background: #ffffff; }
+  h1 { color: var(--brand); font-size: 28px; }
+  h2 { color: var(--brand); margin-top: 36px; border-bottom: 2px solid #f0f0f5; padding-bottom: 6px; font-size: 19px; }
+  h3 { color: #333; margin-top: 22px; font-size: 15px; }
+  .updated { color: #777; font-size: 14px; margin-bottom: 32px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+  th, td { text-align: left; padding: 10px; border: 1px solid #e5e5ef; font-size: 13.5px; vertical-align: top; }
+  th { background: #f7f7fc; }
+  a { color: var(--brand); }
+  .contact { background: #f7f7fc; padding: 18px; border-radius: 10px; margin-top: 12px; }
+  .highlight { background: #f4f2ff; border-left: 4px solid var(--brand); padding: 14px 18px; border-radius: 0 10px 10px 0; margin: 20px 0; }
+  .badge { display: inline-block; background: #eef; color: var(--brand); font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 6px; margin-left: 6px; vertical-align: middle; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: August 21, 2026</p>
+
+<p>This Privacy Policy describes how <strong>AI Document Scanner</strong> ("the App", "we", "us") developed by <strong>NexLab</strong> collects, uses, and discloses information when you use our mobile application.</p>
+
+<p class="highlight"><strong>In short:</strong> scanning, editing, and organizing your documents happens entirely on your device — those files are never uploaded anywhere by default. Two things leave your device, and only when you choose to use them: (1) the text of a document, when you explicitly use an AI feature (Chat, Summarize, Translate, or Form Assistant) — sent to our AI provider to generate a response, and nothing else; and (2) full document files, only if you sign in with Google and turn on optional Cloud Backup. Everything else described below is limited to what our advertising, analytics, and billing partners collect automatically, listed in full in the table below.</p>
+
+<h2>1. Information We Collect</h2>
+
+<h3>1.1 Files and scans you process in the App</h3>
+<p>AI Document Scanner works with the PDF and image files you choose to open, create, or edit, and with photographs you capture using the built-in document scanner. Scanning, on-device text recognition (OCR), cropping, merging, splitting, compressing, watermarking, rotating, signing, annotating, and every PDF tool in the app runs locally on your device. We do not upload these file contents or the images themselves to our own servers.</p>
+
+<h3>1.2 AI features (Chat, Summarize, Translate, Form Assistant)</h3>
+<p>When you explicitly use an AI feature, the extracted text of the relevant document — not the original image or PDF file — is sent to our AI provider (Anthropic) to generate the response you requested. This only happens when you tap Chat, Summarize, Translate, or Form Assistant on a specific document; it never happens automatically or in the background. That text is subject to Anthropic's own privacy policy, available at <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a>. We do not send your documents to any AI provider for any other reason.</p>
+
+<h3>1.3 Optional Cloud Backup and account information</h3>
+<p>Cloud Backup is off by default. If you choose to sign in with Google, we receive your name, email address, and profile photo via Firebase Authentication, used only to identify your account within the App. If you then turn on Cloud Backup for a document, the PDF file itself is uploaded to Firebase Cloud Storage, with basic details (title, category, timestamp) stored in Cloud Firestore so you can browse and restore your backed-up documents from Settings → Cloud Documents. Documents are never backed up automatically — only when you sign in and take that action yourself.</p>
+
+<h3>1.4 Information collected automatically by third-party services</h3>
+<table>
+  <tr><th>Service</th><th>Purpose</th><th>Data Collected</th></tr>
+  <tr><td>Google AdMob</td><td>Displaying ads (banner, interstitial, native, and rewarded video) to support free use of the App</td><td>Advertising ID, device information, approximate location, ad interaction data</td></tr>
+  <tr><td>Firebase Analytics</td><td>Understanding app usage to improve features</td><td>App usage events, device/app information, approximate location</td></tr>
+  <tr><td>Firebase Crashlytics</td><td>Detecting and fixing crashes</td><td>Crash logs, device information, app version</td></tr>
+  <tr><td>Google Play Billing</td><td>Processing in-app purchases / subscriptions</td><td>Purchase status, transaction ID (handled by Google, not stored by us)</td></tr>
+  <tr><td>NexLab purchase verification (Firebase Cloud Function)</td><td>Confirming with Google that a premium purchase is genuine and still active, to prevent fraudulent unlocks</td><td>Purchase token and product ID only. No file contents, no personal identifiers.</td></tr>
+  <tr><td>Anthropic (AI provider)</td><td>Generating a response when you use Chat, Summarize, Translate, or Form Assistant</td><td>The extracted text of the specific document you're asking about — only when you trigger one of these features</td></tr>
+  <tr><td>Firebase Authentication, Firestore &amp; Storage</td><td>Optional sign-in and Cloud Backup</td><td>Name, email, profile photo (on sign-in); PDF files and basic metadata (only for documents you explicitly back up)</td></tr>
+</table>
+
+<h2>2. Device Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Why we need it</th></tr>
+  <tr><td>Camera</td><td>To let you photograph physical documents with the built-in scanner. Images are captured, auto-cropped, and saved as a PDF on your device. The App does not record video and does not access the camera in the background.</td></tr>
+  <tr><td>Storage / Files</td><td>To let you select, save, and open PDF and image files on your device</td></tr>
+  <tr><td>Internet</td><td>To show ads, process AI requests you initiate, sync optional Cloud Backup, verify in-app purchases, and report crashes</td></tr>
+</table>
+<p>We only request permissions necessary for the features you use. You can deny or revoke permissions at any time in your device settings, though some features may not function without them.</p>
+
+<h2>3. How We Use Information</h2>
+<ul>
+  <li>To operate and maintain core App functionality — scanning, OCR, and PDF tools, all on-device</li>
+  <li>To generate the response you requested when you use an AI feature</li>
+  <li>To sync and restore your documents across devices, only if you enable Cloud Backup</li>
+  <li>To display advertisements that support free use of the App</li>
+  <li>To process and verify optional in-app purchases (Premium)</li>
+  <li>To diagnose crashes and improve App stability</li>
+  <li>To understand which features are used most, to guide improvements</li>
+</ul>
+
+<h2>4. Data Sharing</h2>
+<p>We do not sell your personal information. Information collected by AdMob, Firebase Analytics, Firebase Crashlytics, and Google Play Billing is shared with Google in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. Text you submit to an AI feature is shared with Anthropic solely to generate that response, governed by <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>. We do not share your documents, scans, or file contents with anyone else — they stay on your device unless you explicitly enable Cloud Backup, in which case they're stored in your own Firebase account, not shared onward to any third party.</p>
+
+<h2>5. Children's Privacy</h2>
+<p>AI Document Scanner is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us so we can remove it.</p>
+
+<h2>6. Data Retention</h2>
+<ul>
+  <li><strong>Local files and scans</strong> remain on your device and are managed entirely by you; we do not retain copies.</li>
+  <li><strong>Cloud-backed-up documents</strong> remain in your Firebase account until you delete them from Settings → Cloud Documents, or delete your account.</li>
+  <li><strong>Text sent to AI features</strong> is processed to generate your response and is subject to Anthropic's own retention policy — see the link in Section 1.2. We do not separately store this text after the response is returned.</li>
+  <li><strong>Analytics and crash data</strong> are retained by Firebase/Google per their standard retention policies.</li>
+  <li><strong>Purchase verification tokens</strong> are not stored after the check completes.</li>
+</ul>
+
+<h2>7. Your Choices</h2>
+<ul>
+  <li>You can opt out of personalized advertising via your device's Ad Settings (Settings &rarr; Google &rarr; Ads &rarr; Opt out of Ads Personalization).</li>
+  <li>You can disable specific permissions (Camera, Storage) at any time in your device's app settings.</li>
+  <li>You can sign out or delete your account at any time from Settings, which stops any further Cloud Backup activity.</li>
+  <li>You can delete individually backed-up documents from Settings → Cloud Documents, or delete documents from your device entirely via the App or your device's file manager.</li>
+  <li>You can choose never to use an AI feature — none of your document text is ever sent anywhere unless you explicitly tap Chat, Summarize, Translate, or Form Assistant.</li>
+  <li>You can delete the App at any time to remove all locally stored data.</li>
+</ul>
+
+<h2>8. Security</h2>
+<p>We take reasonable measures to protect information processed by the App. Documents you don't explicitly back up are processed locally and protected by your device's own security. Cloud-backed-up documents are stored using Firebase's standard security infrastructure. However, no method of electronic storage or transmission is 100% secure, and we cannot guarantee absolute security.</p>
+
+<h2>9. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last updated" date.</p>
+
+<h2>10. Contact Us</h2>
+<div class="contact">
+  <p>If you have questions about this Privacy Policy, contact us at:<br>
+  <strong>Email:</strong> Rajtanha.rt@gmail.com<br>
+  <strong>Developer:</strong> NexLab</p>
+</div>
+
+</body>
+</html>
